@@ -35,7 +35,7 @@ class ContactController extends Controller
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; 
         $mail->Port       = 587;
         $mail->setFrom($email, $name); 
-        $mail->addAddress('dusonlines@gmail.com');
+        $mail->addAddress('receiveremail@gmail.com');
         $mail->isHTML(true);  
         $mail->Subject =  $subject;
         $mail->Body    = $message;
